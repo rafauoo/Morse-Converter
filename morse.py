@@ -1,5 +1,4 @@
 import argparse as arg
-import time
 
 code = {
     "A": ".-",
@@ -92,11 +91,9 @@ def output_maker():
 
 
 def main():
-    start = time.process_time()
     output = output_maker()
     for line in output:
         print(line)
-    stop = time.process_time()
 
 
 if __name__ == "__main__":
